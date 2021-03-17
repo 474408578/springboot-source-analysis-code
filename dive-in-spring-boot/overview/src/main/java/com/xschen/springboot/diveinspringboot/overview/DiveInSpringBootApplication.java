@@ -1,9 +1,7 @@
-package com.xschen.springboot.diveinspringboot;
+package com.xschen.springboot.diveinspringboot.overview;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
@@ -11,7 +9,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
  */
 
 @SpringBootApplication
-@ServletComponentScan(basePackages = "com.xschen.springboot.diveinspringboot.web.servlet") // 注册Servlet
+@ServletComponentScan(basePackages = "com.xschen.springboot.diveinspringboot.overview.web.servlet") // 注册Servlet
 public class DiveInSpringBootApplication {
 
     public static void main(String[] args) {
