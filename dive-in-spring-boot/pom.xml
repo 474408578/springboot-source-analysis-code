@@ -19,6 +19,7 @@
         <module>overview</module>
         <module>auto-configuration</module>
         <module>spring-application</module>
+        <module>spring-webmvc</module>
     </modules>
 
     <properties>
