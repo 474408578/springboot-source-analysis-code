@@ -18,6 +18,7 @@
     <modules>
         <module>overview</module>
         <module>auto-configuration</module>
+        <module>spring-application</module>
     </modules>
 
     <properties>

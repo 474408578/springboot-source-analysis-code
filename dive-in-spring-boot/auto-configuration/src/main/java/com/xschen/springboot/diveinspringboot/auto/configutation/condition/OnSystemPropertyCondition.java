@@ -15,6 +15,7 @@ public class OnSystemPropertyCondition implements Condition {
 
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
+        // 获取 ConditionalOnSystemProperty注解的两个属性。
         Map<String, Object> attributes =
                 metadata.getAnnotationAttributes(ConditionalOnSystemProperty.class.getName());
         String propertyName = String.valueOf(attributes.get("name"));

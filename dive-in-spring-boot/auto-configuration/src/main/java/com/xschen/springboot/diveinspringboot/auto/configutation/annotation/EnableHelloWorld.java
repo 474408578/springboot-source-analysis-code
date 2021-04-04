@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
 
 /**
+ * 激活 HelloWorld 模块
  * @author xschen
  */
 
@@ -13,7 +14,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 //@Import(HelloWorldConfiguration.class)
-@Import(HelloWorldImportSelector.class)
+@Import(HelloWorldImportSelector.class) // import HelloWorldImportSelector
 public @interface EnableHelloWorld {
 
 }
