@@ -1,0 +1,15 @@
+# Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.xschen.springboot.diveinspringboot.spring.application.context.AfterHelloWorldApplicationContextInitializer,\
+com.xschen.springboot.diveinspringboot.spring.application.context.HelloWorldApplicationContextInitializer
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+com.xschen.springboot.diveinspringboot.spring.application.listener.HelloWorldApplicationListener,\
+com.xschen.springboot.diveinspringboot.spring.application.listener.AfterHelloWorldApplicationListener,\
+com.xschen.springboot.diveinspringboot.spring.application.listener.BeforeConfigFileApplicationListener
+
+
+# Run Listeners
+org.springframework.boot.SpringApplicationRunListener=\
+com.xschen.springboot.diveinspringboot.spring.application.run.HelloWorldRunListener
