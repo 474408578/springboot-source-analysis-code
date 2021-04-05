@@ -1,0 +1,17 @@
+family:
+  familyName: "happy family by propertySource"
+  father:
+    name: song
+    age: 24 # ${random.int} # 随机生成
+  mother:
+    alias:
+      - lovely
+      - ailice
+  child:
+    name: ${family.father.name:jy}  # 占位符获取之前配置的值 {xxx.yyy:默认值}
+    age: 5
+    friends:
+      - name: tom
+        sex: male
+      - name: mary
+        sex: female

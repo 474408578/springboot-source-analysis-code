@@ -1,7 +1,7 @@
 package com.kancloud.springboot.restful.api.controller;
 
-import com.kancloud.springboot.launch.core.utils.Result;
-import com.kancloud.springboot.launch.core.utils.ResultUtil;
+import com.kancloud.springboot.launch.core.utils.result.Result;
+import com.kancloud.springboot.launch.core.utils.result.ResultUtil;
 import com.kancloud.springboot.restful.api.model.Article;
 import com.kancloud.springboot.restful.api.model.Reader;
 import lombok.extern.slf4j.Slf4j;

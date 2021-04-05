@@ -1,16 +1,15 @@
-package com.kancloud.springboot.launch.core.utils;
+package com.kancloud.springboot.launch.core.utils.result;
 
 import lombok.Data;
 
-import java.util.List;
-
 /**
- * 前端返回 List 格式
+ * 前端返回格式
  * @author xschen
  */
 
 @Data
-public class ListResult<T> {
+public class Result<T> {
+
     /** 错误码 **/
     private Integer code;
     /** 成功或失败 **/
@@ -18,5 +17,5 @@ public class ListResult<T> {
     /** 提示信息 **/
     private String msg;
     /** 具体内容 **/
-    private List<T> data;
+    private T data;
 }

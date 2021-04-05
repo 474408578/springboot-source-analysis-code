@@ -1,4 +1,4 @@
-package com.kancloud.springboot.launch.core.utils;
+package com.kancloud.springboot.launch.core.utils.result;
 
 /**
  * @author xschen
