@@ -21,6 +21,7 @@ import javax.validation.constraints.NotEmpty;
 @Configuration
 @Validated // 需要检验的属性装配类上加 @Validated 注解
 @ConfigurationProperties(prefix = "family")
+// 不指定 PropertySource 默认去application.yaml中去找
 @PropertySource(value = "classpath:/META-INF/family.yaml", factory = YamlPropertySourceFactory.class)
 public class Family {
 

@@ -15,6 +15,7 @@
         <module>launch-core</module>
         <module>restful-api</module>
         <module>configuration-management</module>
+        <module>rdbms-operation</module>
     </modules>
 
     <properties>
