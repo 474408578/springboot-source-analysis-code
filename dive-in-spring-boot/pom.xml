@@ -20,6 +20,7 @@
         <module>auto-configuration</module>
         <module>spring-application</module>
         <module>spring-webmvc</module>
+        <module>springboot-webmvc</module>
     </modules>
 
     <properties>
