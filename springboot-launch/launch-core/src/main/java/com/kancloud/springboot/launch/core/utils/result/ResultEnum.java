@@ -2,6 +2,8 @@ package com.kancloud.springboot.launch.core.utils.result;
 
 /**
  * @author xschen
+ *
+ * @see <a href="https://www.cnblogs.com/apocelipes/p/13601335.html">https://www.cnblogs.com/apocelipes/p/13601335.html</a>
  */
 
 public enum ResultEnum {
@@ -11,9 +13,9 @@ public enum ResultEnum {
     UNKNOWN_ERROR(-1, false, "unknown error"),
     ;
 
-    private Integer code;
-    private Boolean success;
-    private String msg;
+    private final Integer code;
+    private final Boolean success;
+    private final String msg;
 
     ResultEnum(Integer code, Boolean success, String msg) {
         this.code = code;
