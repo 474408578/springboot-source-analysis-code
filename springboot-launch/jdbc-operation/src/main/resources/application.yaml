@@ -1,0 +1,48 @@
+# 单数据源配置 single
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+# 多数据源配置:  multidatasource
+#spring:
+#  datasource:
+#    primary:
+#      jdbc-url: jdbc:mysql://119.45.56.227:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+#      username: root
+#      password: 123456
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#    secondary:
+#      jdbc-url: jdbc:mysql://119.45.56.227:3306/testdb2?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+#      username: root
+#      password: 123456
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+
+# jta 配置
+#primarydb:
+#  uniqueResourceName: primary
+#  xaDataSourceClassName: com.mysql.cj.jdbc.MysqlXADataSource
+#  xaProperties:
+#    url: jdbc:mysql://119.45.56.227:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+#    user: root
+#    password: 123456
+#  exclusiveConnectionMode: true
+#  minPoolSize: 3
+#  maxPoolSize: 10
+#  testQuery: SELECT 1 from dual #由于采用HikiriCP，用于检测数据库连接是否存活。
+#
+#secondarydb:
+#  uniqueResourceName: secondary
+#  xaDataSourceClassName: com.mysql.cj.jdbc.MysqlXADataSource
+#  xaProperties:
+#    url: jdbc:mysql://119.45.56.227:3306/testdb2?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+#    user: root
+#    password: 123456
+#  exclusiveConnectionMode: true
+#  minPoolSize: 3
+#  maxPoolSize: 10
+#  testQuery: SELECT 1 from dual #由于采用HikiriCP，用于检测数据库连接是否存活。

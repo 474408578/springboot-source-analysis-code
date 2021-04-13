@@ -15,7 +15,8 @@
         <module>launch-core</module>
         <module>restful-api</module>
         <module>configuration-management</module>
-        <module>rdbms-operation</module>
+        <module>jdbc-operation</module>
+        <module>jpa-operation</module>
     </modules>
 
     <properties>
