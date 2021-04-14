@@ -9,5 +9,6 @@ spring:
   # 具体可参考 JpaProperties.java
   jpa:
     hibernate:
-      ddl-auto: create-drop
-      database: mysql
+      ddl-auto: create
+    database: mysql
+    show-sql: true
