@@ -5,6 +5,10 @@ import com.kancloud.springboot.jpa.operation.single.model.Reader;
 import com.kancloud.springboot.jpa.operation.single.repository.ArticleRepository;
 import com.kancloud.springboot.jpa.operation.single.vo.ArticleVO;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -27,6 +31,11 @@ public class ArticleService {
         articleRepository.save(article);
         return articleVO;
     }
+
+    public void saveArticle(Article article) {
+        articleRepository.save(article);
+    }
+
 
     public void deleteArticle(Long id) {
         articleRepository.deleteById(id);
@@ -54,6 +63,16 @@ public class ArticleService {
         return articles;
     }
 
+    /**
+     * 指定排序方式，查询所有数据
+     * @param sort
+     * @return
+     */
+    public List<Article> getAllArticle(Sort sort) {
+        List<Article> articles = articleRepository.findAll(sort);
+        return articles;
+    }
+
     public ArticleVO findByAuthor(String author) {
         Article song = articleRepository.findByAuthor("song");
         ArticleVO articleVO = new ArticleVO();
@@ -63,5 +82,10 @@ public class ArticleService {
         readerList.add(new Reader("hui", 27));
         articleVO.setReaderList(readerList);
         return articleVO;
+    }
+
+    public Page<Article> getAllArticle(Pageable pageable) {
+        Page<Article> articles = articleRepository.findAll(pageable);
+        return articles;
     }
 }

@@ -1,5 +1,6 @@
 package com.kancloud.springboot.jpa.operation.single;
 
+import com.kancloud.springboot.jpa.operation.single.entity.Article;
 import com.kancloud.springboot.jpa.operation.single.service.ArticleService;
 import com.kancloud.springboot.jpa.operation.single.vo.ArticleVO;
 import lombok.extern.slf4j.Slf4j;
@@ -41,6 +42,18 @@ public class JpaApplicationTest {
         // 更新
         song.setAuthor("xiaosong");
         articleService.updateArticle(song);
+    }
+
+    @Test
+    public void insertData() {
+        for (int i = 0; i < 30; i++) {
+            Article article = Article.builder()
+                    .author("song" + i)
+                    .content("spring content" + i)
+                    .title("spring" + i).createTime(LocalDateTime.now())
+                    .build();
+            articleService.saveArticle(article);
+        }
     }
 
 }

@@ -1,14 +1,39 @@
+# ------------- 单数据源配置 single ------------------
+#spring:
+#  # datasource 相关配置
+#  datasource:
+#    url: jdbc:mysql://119.45.56.227:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  # jpa 相关配置
+#  # 具体可参考 JpaProperties.java
+#  jpa:
+#    hibernate:
+#      ddl-auto: validate # create
+#    database: mysql
+#    show-sql: true
+
+# ------------------- 多数据源配置 multi -------------------
 spring:
-  # datasource 相关配置
+  # 数据源配置 DataSourceProperties
   datasource:
-    url: jdbc:mysql://119.45.56.227:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  # jpa 相关配置
-  # 具体可参考 JpaProperties.java
+    primary:
+      jdbc-url: jdbc:mysql://119.45.56.227:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    secondary:
+      jdbc-url: jdbc:mysql://119.45.56.227:3306/testdb2?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # jpa 配置
   jpa:
     hibernate:
       ddl-auto: create
     database: mysql
     show-sql: true
+
