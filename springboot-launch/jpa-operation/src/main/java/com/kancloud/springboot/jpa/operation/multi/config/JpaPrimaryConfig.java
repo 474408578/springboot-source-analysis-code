@@ -10,8 +10,11 @@ import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.persistence.EntityManager;
 import javax.sql.DataSource;
@@ -29,7 +32,12 @@ import java.util.Map;
  */
 
 @Configuration
-
+@EnableTransactionManagement
+@EnableJpaRepositories(
+        entityManagerFactoryRef = "primaryEntityManagerFactoryBean",
+        transactionManagerRef = "primaryTransactionManager",
+        basePackages = {"com.kancloud.springboot.jpa.operation.multi.dao.testdb"}
+)
 public class JpaPrimaryConfig {
 
     @Autowired
@@ -62,7 +70,7 @@ public class JpaPrimaryConfig {
     }
 
     /**
-     * 实体工厂
+     * 实体管理器工厂
      * @param builder
      * @return
      */
@@ -74,7 +82,21 @@ public class JpaPrimaryConfig {
                 new HibernateSettings());
 
         return builder.dataSource(primaryDatasource())
-                .properties()
+                .properties(properties)
+                .packages("com.kancloud.springboot.jpa.operation.multi.dao.testdb")
+                .persistenceUnit("primaryPersistenceUnit")
+                .build();
+    }
+
+    /**
+     * 事务管理器
+     * @param builder
+     * @return
+     */
+    @Primary
+    @Bean(name = "primaryTransactionManager")
+    public PlatformTransactionManager primaryTransactionManager(EntityManagerFactoryBuilder builder) {
+        return new JpaTransactionManager(primaryEntityManagerFactoryBean(builder).getObject());
     }
 
 

@@ -1,4 +1,4 @@
-package com.kancloud.springboot.jpa.operation.multi.dao.testdb;
+package com.kancloud.springboot.jpa.operation.jta.dao.testdb;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

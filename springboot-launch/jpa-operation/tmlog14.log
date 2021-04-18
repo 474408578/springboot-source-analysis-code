@@ -1,0 +1,4 @@
+{"id":"10.32.103.1.tm161871771190200001","wasCommitted":true,"participants":[{"uri":"10.32.103.1.tm1","state":"COMMITTING","expires":1618718011924,"resourceName":"primary"}]}
+{"id":"10.32.103.1.tm161871771190200001","wasCommitted":true,"participants":[{"uri":"10.32.103.1.tm1","state":"TERMINATED","expires":1618718012103,"resourceName":"primary"}]}
+{"id":"10.32.103.1.tm161871771210400002","wasCommitted":true,"participants":[{"uri":"10.32.103.1.tm2","state":"COMMITTING","expires":1618718012180,"resourceName":"secondary"}]}
+{"id":"10.32.103.1.tm161871771210400002","wasCommitted":true,"participants":[{"uri":"10.32.103.1.tm2","state":"TERMINATED","expires":1618718012207,"resourceName":"secondary"}]}

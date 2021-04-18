@@ -1,4 +1,4 @@
-package com.kancloud.springboot.jpa.operation.multi.dao.testdb;
+package com.kancloud.springboot.jpa.operation.jta.dao.testdb2;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface ArticleRepository extends JpaRepository<Article, Long> {
+public interface MessageRepository extends JpaRepository<Message, Long> {
 
 }
