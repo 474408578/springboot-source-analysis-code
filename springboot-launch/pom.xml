@@ -17,6 +17,7 @@
         <module>configuration-management</module>
         <module>jdbc-operation</module>
         <module>jpa-operation</module>
+        <module>mybatis-operation</module>
     </modules>
 
     <properties>

@@ -1,0 +1,7 @@
+[2021-04-23 17:15:35.880] [main] [INFO ] [c.k.s.m.o.single.MybatisApplicationTest:55] - Starting MybatisApplicationTest on DST010730 with PID 30668 (started by xschen in F:\project\springboot-source-analysis-code\springboot-launch\mybatis-operation)
+[2021-04-23 17:15:35.883] [main] [INFO ] [c.k.s.m.o.single.MybatisApplicationTest:651] - No active profile set, falling back to default profiles: default
+[2021-04-23 17:15:37.068] [main] [INFO ] [c.k.s.m.o.single.MybatisApplicationTest:61] - Started MybatisApplicationTest in 1.59 seconds (JVM running for 2.716)
+[2021-04-23 17:15:37.334] [main] [INFO ] [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+[2021-04-23 17:15:37.624] [main] [INFO ] [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+[2021-04-23 17:15:37.707] [SpringContextShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+[2021-04-23 17:15:37.716] [SpringContextShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
