@@ -18,6 +18,7 @@
         <module>jdbc-operation</module>
         <module>jpa-operation</module>
         <module>mybatis-operation</module>
+        <module>logging</module>
     </modules>
 
     <properties>
