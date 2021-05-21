@@ -1,6 +1,8 @@
 package com.kancloud.springboot.launch.core.utils;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
@@ -36,5 +38,37 @@ public class TimeUtil {
     public static String getLocalDateTime() {
         LocalDateTime now = LocalDateTime.now();
         return now.format(dateTimeFormatter);
+    }
+
+    /**
+     * 获取 timeStamp
+     * @param localDateTime
+     * @return
+     */
+    public static Long getTimestamp(LocalDateTime localDateTime) {
+        ZoneId zoneId = ZoneId.systemDefault();
+        Long timestamp = localDateTime.atZone(zoneId).toInstant().toEpochMilli();
+        return timestamp;
+    }
+
+    /**
+     * 获取时间戳，只取时间戳的前 length 位
+     * @param localDateTime
+     * @param length
+     * @return
+     */
+    public static Long getSpecifiedLengthTimestamp(LocalDateTime localDateTime, int length) {
+        String timestamp = String.valueOf(getTimestamp(localDateTime));
+        if (timestamp.length() < length) {
+            throw new RuntimeException("please check the specified length: " + length);
+        }
+        return Long.valueOf(timestamp.substring(0, length));
+    }
+
+    public static LocalDateTime getLocalDateTime(Long timestamp) {
+        LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochSecond(timestamp), ZoneId.systemDefault());
+        String date = localDateTime.format(dateTimeFormatter);
+//        return date;
+        return localDateTime;
     }
 }
