@@ -19,6 +19,7 @@
         <module>jpa-operation</module>
         <module>mybatis-operation</module>
         <module>logging</module>
+        <module>lifecycle</module>
     </modules>
 
     <properties>
