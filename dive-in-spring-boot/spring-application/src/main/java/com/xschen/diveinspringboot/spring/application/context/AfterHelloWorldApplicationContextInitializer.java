@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.spring.application.context;
+package com.xschen.diveinspringboot.spring.application.context;
 
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;

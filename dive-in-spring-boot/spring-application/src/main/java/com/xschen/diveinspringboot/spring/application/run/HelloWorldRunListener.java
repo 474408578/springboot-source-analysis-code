@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.spring.application.run;
+package com.xschen.diveinspringboot.spring.application.run;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringApplicationRunListener;

@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.springboot.view.template.engine;
+package com.xschen.diveinspringboot.springboot.view.template.engine;
 
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.core.io.DefaultResourceLoader;

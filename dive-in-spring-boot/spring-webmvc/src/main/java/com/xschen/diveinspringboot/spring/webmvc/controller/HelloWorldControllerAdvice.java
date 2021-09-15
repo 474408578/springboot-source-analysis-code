@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.spring.webmvc.controller;
+package com.xschen.diveinspringboot.spring.webmvc.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

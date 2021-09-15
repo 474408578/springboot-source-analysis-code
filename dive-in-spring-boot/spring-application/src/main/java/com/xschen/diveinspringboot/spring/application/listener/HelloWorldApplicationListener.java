@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.spring.application.listener;
+package com.xschen.diveinspringboot.spring.application.listener;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

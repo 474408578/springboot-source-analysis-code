@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.springboot.view.config;
+package com.xschen.diveinspringboot.springboot.view.config;
 
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;

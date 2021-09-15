@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.configuration;
+package com.xschen.diveinspringboot.auto.configutation.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

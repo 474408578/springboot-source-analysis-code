@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.springboot.view.bootstrap;
+package com.xschen.diveinspringboot.springboot.view.bootstrap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

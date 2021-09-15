@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.annotation;
+package com.xschen.diveinspringboot.auto.configutation.annotation;
 
 import org.springframework.stereotype.Repository;
 

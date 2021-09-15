@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.condition;
+package com.xschen.diveinspringboot.auto.configutation.condition;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Conditional;

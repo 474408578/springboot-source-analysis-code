@@ -1,6 +1,5 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.annotation;
+package com.xschen.diveinspringboot.auto.configutation.annotation;
 
-import com.xschen.springboot.diveinspringboot.auto.configutation.configuration.HelloWorldConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;

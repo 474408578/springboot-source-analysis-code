@@ -1,6 +1,6 @@
-package com.xschen.springboot.diveinspringboot.spring.webmvc.servlet.support;
+package com.xschen.diveinspringboot.spring.webmvc.servlet.support;
 
-import com.xschen.springboot.diveinspringboot.spring.webmvc.config.DispatcherServletConfig;
+import com.xschen.diveinspringboot.spring.webmvc.config.DispatcherServletConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**

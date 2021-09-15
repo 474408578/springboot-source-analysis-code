@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.springboot.webmvc.controller;
+package com.xschen.diveinspringboot.springboot.webmvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,6 +1,6 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.bootstrap;
+package com.xschen.diveinspringboot.auto.configutation.bootstrap;
 
-import com.xschen.springboot.diveinspringboot.auto.configutation.repository.MyFirstLevelRepository;
+import com.xschen.diveinspringboot.auto.configutation.repository.MyFirstLevelRepository;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;

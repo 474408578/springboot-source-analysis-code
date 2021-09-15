@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.springboot.webmvc.config;
+package com.xschen.diveinspringboot.springboot.webmvc.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;

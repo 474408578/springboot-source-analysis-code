@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.service;
+package com.xschen.diveinspringboot.auto.configutation.service;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

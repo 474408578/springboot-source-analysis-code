@@ -1,6 +1,6 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.repository;
+package com.xschen.diveinspringboot.auto.configutation.repository;
 
-import com.xschen.springboot.diveinspringboot.auto.configutation.annotation.FirstLevelRepository;
+import com.xschen.diveinspringboot.auto.configutation.annotation.FirstLevelRepository;
 
 /**
  * @author xschen

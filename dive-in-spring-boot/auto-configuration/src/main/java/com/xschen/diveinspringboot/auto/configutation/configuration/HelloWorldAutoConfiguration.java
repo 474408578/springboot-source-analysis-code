@@ -1,7 +1,7 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.configuration;
+package com.xschen.diveinspringboot.auto.configutation.configuration;
 
-import com.xschen.springboot.diveinspringboot.auto.configutation.annotation.EnableHelloWorld;
-import com.xschen.springboot.diveinspringboot.auto.configutation.condition.ConditionalOnSystemProperty;
+import com.xschen.diveinspringboot.auto.configutation.annotation.EnableHelloWorld;
+import com.xschen.diveinspringboot.auto.configutation.condition.ConditionalOnSystemProperty;
 import org.springframework.context.annotation.Configuration;
 
 /**

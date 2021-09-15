@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.spring.webmvc.config;
+package com.xschen.diveinspringboot.spring.webmvc.config;
 
 import org.springframework.context.annotation.ComponentScan;
 

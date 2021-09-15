@@ -1,6 +1,6 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.bootstrap;
+package com.xschen.diveinspringboot.auto.configutation.bootstrap;
 
-import com.xschen.springboot.diveinspringboot.auto.configutation.service.CalculateService;
+import com.xschen.diveinspringboot.auto.configutation.service.CalculateService;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;

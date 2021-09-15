@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.springboot.view.controller;
+package com.xschen.diveinspringboot.springboot.view.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

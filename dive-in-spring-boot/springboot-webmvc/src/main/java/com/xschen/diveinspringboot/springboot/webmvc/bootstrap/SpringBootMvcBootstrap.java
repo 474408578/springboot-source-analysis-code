@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.springboot.webmvc.bootstrap;
+package com.xschen.diveinspringboot.springboot.webmvc.bootstrap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.spring.application;
+package com.xschen.diveinspringboot.spring.application;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;

@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.springboot.view.controller;
+package com.xschen.diveinspringboot.springboot.view.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

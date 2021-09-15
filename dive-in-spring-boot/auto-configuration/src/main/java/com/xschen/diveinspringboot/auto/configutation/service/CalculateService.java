@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.service;
+package com.xschen.diveinspringboot.auto.configutation.service;
 
 /**
  * 求和计算服务

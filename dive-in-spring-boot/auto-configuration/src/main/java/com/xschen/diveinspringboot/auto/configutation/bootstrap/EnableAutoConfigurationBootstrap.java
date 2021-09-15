@@ -1,6 +1,6 @@
-package com.xschen.springboot.diveinspringboot.auto.configutation.bootstrap;
+package com.xschen.diveinspringboot.auto.configutation.bootstrap;
 
-import com.xschen.springboot.diveinspringboot.auto.configutation.configuration.HelloWorldAutoConfiguration;
+import com.xschen.diveinspringboot.auto.configutation.configuration.HelloWorldAutoConfiguration;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;

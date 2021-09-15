@@ -1,4 +1,4 @@
-package com.xschen.springboot.diveinspringboot.spring.application.listener;
+package com.xschen.diveinspringboot.spring.application.listener;
 
 import org.springframework.boot.context.config.ConfigFileApplicationListener;
 import org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent;
