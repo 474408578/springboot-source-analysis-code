@@ -15,7 +15,7 @@ public class AfterHelloWorldApplicationListener
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        System.out.println("HelloWorld: " + event.getApplicationContext().getId() +
+        System.out.println("AfterHelloWorld: " + event.getApplicationContext().getId() +
                 ", timestamp: " + event.getTimestamp());
     }
 

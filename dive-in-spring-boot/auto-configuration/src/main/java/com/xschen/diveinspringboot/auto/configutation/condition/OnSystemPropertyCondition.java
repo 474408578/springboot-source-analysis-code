@@ -21,6 +21,6 @@ public class OnSystemPropertyCondition implements Condition {
         String propertyName = String.valueOf(attributes.get("name"));
         String propertyValue = String.valueOf(attributes.get("value"));
         String javaPropertyValue = System.getProperty(propertyName);
-        return (!javaPropertyValue.equals(propertyValue));
+        return (javaPropertyValue.equals(propertyValue));
     }
 }

@@ -7,15 +7,16 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
+ * Profile 环境条件装配 启动类
  * @author xschen
  */
 
 
-@ComponentScan(basePackages = "com.xschen.springboot.diveinspringboot.auto.configutation.service")
-public class CalculateServiceBootstrap {
+@ComponentScan(basePackages = "com.xschen.diveinspringboot.auto.configutation.service")
+public class CalculateServiceProfileBootstrap {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = new SpringApplicationBuilder(CalculateServiceBootstrap.class)
+        ConfigurableApplicationContext context = new SpringApplicationBuilder(CalculateServiceProfileBootstrap.class)
                 .web(WebApplicationType.NONE)
                 .profiles("Java8")
                 .run(args);

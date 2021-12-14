@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 
-@ComponentScan(basePackages = "com.xschen.springboot.diveinspringboot.auto.configutation.repository")
+@ComponentScan(basePackages = "com.xschen.diveinspringboot.auto.configutation.repository")
 public class RepositoryBootstrap {
 
     public static void main(String[] args) {

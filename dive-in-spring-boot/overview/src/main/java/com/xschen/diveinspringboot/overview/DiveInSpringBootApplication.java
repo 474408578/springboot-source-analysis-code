@@ -4,12 +4,19 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebListener;
+import javax.servlet.annotation.WebServlet;
+
 /**
  * @author xschen
+ * @see ServletComponentScan
+ * @see WebFilter
+ * @see WebServlet
+ * @see WebListener
  */
-
 @SpringBootApplication
-@ServletComponentScan(basePackages = "com.xschen.springboot.diveinspringboot.overview.web.servlet") // 注册Servlet
+@ServletComponentScan(basePackages = "com.xschen.diveinspringboot.overview.web")
 public class DiveInSpringBootApplication {
 
     public static void main(String[] args) {

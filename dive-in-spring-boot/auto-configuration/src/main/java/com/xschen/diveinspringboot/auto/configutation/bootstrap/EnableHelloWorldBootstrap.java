@@ -7,6 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * @author xschen
+ * Enable 模块装配示例
  */
 
 @EnableHelloWorld
