@@ -8,7 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * Spring 应用上下文，引导类
  * @author xschen
  */
-@SpringBootApplication
+@SpringBootApplication()
 public class SpringApplicationContextBootstrap {
 
     public static void main(String[] args) {
